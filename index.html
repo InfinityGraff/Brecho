@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./CSS Biblioteca.css">
+    <script src="./PreScript.js"></script>
+  </head>
+
+  <body class="Cl">
+
+    <nav class="Ct">
+      <div class="ppt none" onclick="exibirabas('#Aba-Vendas',this)">Venda</div>
+      <div class="ppt none" onclick="exibirabas('#Aba-Produto',this)">Cadastrar Produto</div>
+    </nav>
+
+    <div id="Aba-Vendas" class="Cl">
+      <form onsubmit="AddEntrada(event,this)">
+        <label>Data:      </label><input  id="Dat" required type="date">
+        <label>Fornecedor:</label><input  id="Frn" required list="Frns"><datalist id="Frns"></datalist> 
+        <label>Produto:   </label><select id="Prd" required onchange="AddProduto()"></select>
+        <input type="submit" value="Adicionar">
+      </form>
+
+      <button onclick="FetchPlan()">Atualizar Tabela</button>
+  
+      <table id="TablAdd"></table>
+    </div>
+
+    <div id="Modal" class="none">
+      <input type="text" placeholder="Nome" id="NomeProduto">
+      <input type="text" placeholder="Valor" id="ValorProduto">
+      <button onclick="ProdutoCadastrdo()" >Salvar</button>
+    </div>
+
+    <div id="Sheet"></div>
+
+  </body>
+  <script src="./Biblioteca.js"></script>
+
+</html>

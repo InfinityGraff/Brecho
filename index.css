@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #4caf50;
+    color: #fff;
+    
+}
+
+nav div{
+    background:#4caf50;
+    margin: 10px;
+    padding: 3px;
+    color:white;
+}
+
+nav div:active{
+    background:#245326;
+    margin: 10px;
+    padding: 3px;
+    color:white;
+}
+
+#Aba-Vendas,#Aba-Produto{height: 500px;}
+
+
+#addOutrrro{
+    background:#4caf50;
+    margin: 10px;
+    padding: 3px;
+    color:white;
+
+}
+
+
+#Modal{
+    z-index: 999;
+}
+
+#Aba-Vendas form{
+    width:500px
+}
